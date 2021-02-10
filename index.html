@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+            content="width-device-width,
+                    initial-scale=1.0" />
+        <title>HTML CSS Assignemnt 1</title>
+        <link rel="stylesheet" href="style.css" >
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+       
+        <!-- <i class="fas fa-thumbs-up fa-5x"></i>
+        <span class="material-icons">assignment_turned_in</span>
+   -->
+
+    <div class="top-container">
+        <div class="login_form">
+
+           <div class="top-bar">
+                <h1 class="top-heading-text">Login</h1>
+                <span class="top-heading-text-note">Login to try our amazing services </span>
+           </div>
+           
+           <!--Form Start (columns + bottom bar)-->
+           <form action="" name="LoginForm">
+
+                <div class="columns">
+
+                    <div class="left-column"> 
+                        
+                            
+                            <h5>First Name</h5>
+                            <input type="text" 
+                                    id =  "firstName"
+                                    name = "firstName" 
+                                    maxlength="20" 
+                                    placeholder="" 
+                                    required >
+                            <!-- <span>
+                                <div class="error" *ngIf="f.name.touched && f.name.invalid && f.name.errors.required">
+                                        <span class="material-icons">error_outline</span>Name is required.
+                                    </div>
+                                </span> -->
+                            
+                            <h5>Last Name</h5>
+                            <input type="text" 
+                                    id =  "lastName"
+                                    name = "lastName" 
+                                    maxlength="20" 
+                                    placeholder="" 
+                                    required>
+                            <!-- <span>
+                                <div class="error" *ngIf="f.lastName.touched && f.lastName.invalid && f.lastName.errors.required">
+                                    <span class="material-icons">error_outline</span>Last name is required.
+                                    </div>
+                                </span> -->
+                            
+                            <h5>Middle Name</h5>
+                            <input type="text" 
+                                    id =  "middleName"
+                                    name = "middleName" 
+                                    maxlength="20" 
+                                    placeholder="" >
+                            <!-- <span>
+                                <div class="error" *ngIf="f.middleName.touched && f.middleName.invalid && f.middleName.errors.required">
+                                    <span class="material-icons info">error_outline</span>Middle name is required.
+                                    </div>
+                                </span> -->
+                        
+                            <h5>Address Line 1</h5>
+                            <input type="text" 
+                                    id="addressLine1" 
+                                    name="addressLine1" 
+                                    maxlength="35" 
+                                    placeholder="" 
+                                    required >
+                            
+                            <h5>Address Line 2</h5>
+                            <input type="text" 
+                                    id="addressLine2" 
+                                    name="addressLine2" 
+                                    maxlength="35" 
+                                    placeholder="" >
+
+                            <h5>City</h5>
+                            <input type="text" 
+                                    id="city"
+                                    name="city" 
+                                    maxlength="15" 
+                                    placeholder="" 
+                                    required >
+
+
+                    
+                        </div>
+
+                    <div class="right-column">
+                    
+                    
+                        <h5>state</h5>
+                        <input type="text" 
+                                id="state"
+                                name="state" 
+                                maxlength="15" 
+                                placeholder="" 
+                                required>
+
+                        <h5>Pin Code</h5> 
+                        <span  id="error-msg-pin" >8 digit pin code only</span>
+                        <input type="text" 
+                                id="pincode"
+                                name="pincode" 
+                                pattern="([0-9]{8})" 
+                                placeholder="####-####"
+                                title="Fill 8 digit pin code only"
+                                required>      
+
+                        <h5>Phone Number</h5>
+                        <span  id="error-msg-phno" >10 digit phone no. only</span>
+                        <input type="tel" 
+                                id="phoneNumber"
+                                name = "phoneNumber"  
+                                pattern="([0-9]{10})" 
+                                title="10 digits only" 
+                                placeholder="###-###-####" 
+                                required >
+                        <!-- <span>
+                            <div class="error" *ngIf="f.phoneNumber.touched && f.phoneNumber.invalid && f.phoneNumber.errors.required">
+                                <span class="material-icons">error_outline</span>Mobile Number is required.
+                                </div>
+                            </span>
+                        <span>
+                            <div class="error" *ngIf="f.phoneNumber.touched && f.phoneNumber.invalid && f.phoneNumber.errors.pattern">
+                                <span class="material-icons">error_outline</span>Please, Enter 10 digit Mobile Number.
+                                </div>
+                            </span> -->
+                        
+                        <h5>Email Id</h5>
+                        <span  id="error-msg-email" >Enter valid email id. Must have @</span>
+                        <input type="email" 
+                                id="email"
+                                name = "email" 
+                                placeholder="ex@ex.ex" 
+                                required>
+                        
+                        <h5>Password</h5>
+                        <span  id="error-msg-password" >Password must have at least 8 characters, 1 UpperCase char, 1 LowerCase Char, 1 special char.</span>
+                        <input type="password" 
+                                id="password"
+                                name="password"
+                                minlength="8" 
+                                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}" 
+                                title="Password must have at least 8 characters, 1 UpperCase char, 1 LowerCase Char, 1 special char " 
+                                placeholder="" 
+                                required >
+                        <!-- <span>
+                            <div class="error" *ngIf="f.password.touched && f.password.invalid && f.password.errors.required">
+                                <span class="material-icons">error_outline</span>Password is required.
+                                </div>
+                            </span>
+                        <div class="error" *ngIf="f.password.touched && f.password.invalid && f.password.errors.pattern">
+                            <ul>
+                                <lh  style="list-style: none;font-size: 14px;margin:0;">
+                                    <span class="material-icons">error_outline</span>Password must have 
+                                    </lh>
+                                <li>at least 8 characters in length.</li>
+                                <li>at least one upper case character.</li>
+                                <li>at least one lower case character.</li>
+                                <li>at least one special character.</li>
+                                </ul>
+                        </div> -->
+        
+                    </div>
+                </div>
+
+                    <!--bottom bar (for button)-->
+                    <div class="bottom-bar">
+                        <button class="login_signIn_button" 
+                                id="submitButton"
+                                onclick = "Validate()" 
+                                type="submit" 
+                                name="Submit" >
+                                <strong>Continue</strong>
+                        </button>
+
+                        <button class="login_signIn_button cancel" 
+                                id="cancelButton"
+                                type="reset" 
+                                name="Reset" >
+                                <strong>Cancel</strong>
+                        </button>
+                        
+                                      
+                    </div>
+                
+            </form>
+         
+        </div>
+    </div>
+    </body>
+</html>
+
+

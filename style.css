@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.top-container {
+    background-color: #2a2a72;
+    background-image: linear-gradient(30deg, #373779 0%, #aedaf3 90%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.login_logo {
+    object-fit: contain;
+    width: 100px;
+    margin: 12px 20px 0px 2px;
+}
+.login_form {
+    /*color: rgb(255, 255, 255);*/
+    color: black;
+    border-radius: 16px;
+    padding: 2rem 1rem;
+    margin-top: 3rem ;
+    margin-bottom: 4rem;
+    width: 70%;
+    /*background-color: rgb(42, 42, 42);
+    box-shadow: 10px 15px 7px #000;*/
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+.left-column {
+    width: 50%;
+    margin: 1rem 1rem 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.right-column {
+    width: 50%;
+    margin: 1rem 3rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.close_button {
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    color: gray;
+}
+.top-heading-text {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    padding-left: 2.5rem;
+    padding-top: 0;
+    margin-top: 0;
+}
+.top-heading-text-note {
+    padding-left: 2.5rem;
+    font-size: 0.7rem;
+}
+h5 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-weight: 400;  
+    color: rgb(82, 80, 80);
+}
+
+input {
+    height: 20px;
+    margin-bottom: 10px;
+    /*background-color: rgb(12, 11, 16);
+    background-color: rgb(72, 72, 72);*/
+    width: 80%;
+    border: none;
+    outline: none;
+    /* color: white; */
+    padding: 1px 5px;
+    background-color: white;
+    border-bottom: 2px solid rgb(209, 206, 206);
+    border-radius: 0px;
+    margin: 5px;
+}
+input:focus {
+    /* background-color: rgb(92, 92, 92); */
+    border-bottom: 2px solid rgb(58, 74, 148);
+    transition: 1s;
+}
+ input:hover {
+    /* background-color: rgb(92, 92, 92); */
+    border-bottom: 2px solid rgb(115, 134, 230);
+}
+.bottom-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.login_signIn_button {
+    /*background-color: rgb(251,111,91);*/
+    background-color:rgb(67, 83, 156);
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    width: 10rem;
+    height: 32px;
+    color: white;
+    border-color: none;
+    margin-top: 13px;
+    text-transform: uppercase;
+    margin: 0rem 1rem;
+}
+.login_signIn_button:hover {
+    background-color: rgb(46, 60, 122);
+    cursor: pointer;
+}
+.cancel {
+    background-color: rgb(92, 102, 143);
+}
+input.placeholder {
+    color:rgb(184, 7, 7); /* Firefox */ 
+}
+.login_create_button {
+    border: 1px solid;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    color: black;
+    border-color:grey;
+}
+.login_terms {
+    font-size: 12px;
+}
+.signUp_link{
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+.signUp_link:hover{
+    cursor: pointer;
+}
+
+.disabled{
+    background-color: rgb(144, 154, 199);
+}
+mat-icon {
+    font-size: 19px;
+    padding: 0;
+    margin: 0;
+    height: 19px;
+}
+.close_button{
+    font-size: 24px;
+}
+.close_button:hover{
+    color: black;
+    cursor: pointer;
+
+}
+.text{
+    color: rgb(94, 91, 91);
+}
+.info  {
+    font-size: 6px;
+}
+
+
+input.error {  
+    border-color: hsl(0, 76%, 50%);
+}
+
+#error-msg-pin {
+    color: red;
+    display: none;
+    font-size: 0.8rem;
+}
+
+#error-msg-phno{
+    color: red;
+    display: none;
+    font-size: 0.8rem;
+}
+#error-msg-email{
+    color: red;
+    display: none;
+    font-size: 0.8rem;
+}
+#error-msg-password{
+    color: red;
+    display: none;
+    font-size: 0.8rem;
+}
+
+@media (max-width:600px){
+   
+    .columns {
+        flex-direction: column;
+    }
+    .left-column {
+        width: 80%;
+        margin: 1rem 1rem 1rem 1rem;
+
+    }
+    .right-column {
+        width: 80%;
+        margin: 0rem 1rem 1rem 1rem;
+
+    }
+}
